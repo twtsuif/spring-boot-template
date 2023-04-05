@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/spring_boot_template
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  application:
+    name: spring-data-jpa-demo
